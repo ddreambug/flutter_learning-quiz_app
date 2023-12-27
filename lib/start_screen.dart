@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class MainscreenContent extends StatelessWidget {
-  const MainscreenContent(this.changeScreen, {super.key});
+class StartScreen extends StatelessWidget {
+  const StartScreen(this.changeScreen, {super.key});
   final void Function() changeScreen;
 
   @override
