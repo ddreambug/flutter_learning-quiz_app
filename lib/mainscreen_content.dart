@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 class MainscreenContent extends StatelessWidget {
-  const MainscreenContent(this.switchScreen, {super.key});
-  final void Function() switchScreen;
+  const MainscreenContent(this.changeScreen, {super.key});
+  final void Function() changeScreen;
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +28,7 @@ class MainscreenContent extends StatelessWidget {
             foregroundColor: Colors.white,
             backgroundColor: const Color.fromARGB(255, 87, 43, 153),
           ),
-          onPressed: switchScreen,
+          onPressed: changeScreen,
           icon: const Icon(Icons.arrow_right_alt_outlined),
           label: const Text("Start Quiz"),
         )
