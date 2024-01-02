@@ -6,13 +6,37 @@ class QuestionScreen extends StatefulWidget {
 
   @override
   State<QuestionScreen> createState() {
-    return _QuestionState();
+    return _QuestionScreenState();
   }
 }
 
-class _QuestionState extends State<QuestionScreen> {
+class _QuestionScreenState extends State<QuestionScreen> {
   @override
   Widget build(context) {
-    return const Text('question');
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        const Text('question'),
+        const SizedBox(
+          height: 30,
+        ),
+        ElevatedButton(
+          onPressed: () {},
+          child: const Text('question1'),
+        ),
+        ElevatedButton(
+          onPressed: () {},
+          child: const Text('question2'),
+        ),
+        ElevatedButton(
+          onPressed: () {},
+          child: const Text('question3'),
+        ),
+        ElevatedButton(
+          onPressed: () {},
+          child: const Text('question4'),
+        ),
+      ],
+    );
   }
 }
