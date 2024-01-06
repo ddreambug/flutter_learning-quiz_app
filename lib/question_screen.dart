@@ -21,11 +21,7 @@ class _QuestionScreenState extends State<QuestionScreen> {
     widget.onSelectAnswer(listAnswer);
 
     setState(() {
-      if (questionNo == 5) {
-        questionNo = 0;
-      } else {
-        questionNo++;
-      }
+      questionNo++;
     });
   }
 
