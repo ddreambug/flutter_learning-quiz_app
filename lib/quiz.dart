@@ -25,6 +25,7 @@ class _QuizState extends State<Quiz> {
 
   void homeScreen() {
     setState(() {
+      selectedAnswer = [];
       activeScreen = 'mainscreen-content';
     });
   }
@@ -34,7 +35,6 @@ class _QuizState extends State<Quiz> {
 
     if (selectedAnswer.length == questions.length) {
       setState(() {
-        selectedAnswer = [];
         activeScreen = 'results-screen';
       });
     }

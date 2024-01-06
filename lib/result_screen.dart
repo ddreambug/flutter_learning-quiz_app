@@ -1,6 +1,8 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:quiz_app/data/questions.dart';
+import 'package:quiz_app/question_summary.dart';
 
 class ResultScreen extends StatelessWidget {
   const ResultScreen({
@@ -39,7 +41,8 @@ class ResultScreen extends StatelessWidget {
           children: [
             const Text('You answered X out of Y question correctly!'),
             const SizedBox(height: 30),
-            const Text('String List what you answer correctly...'),
+            //const Text('String List what you answer correctly...'),
+            QuestionSummary(summaryData: getSummaryData()),
             TextButton.icon(
               onPressed: onReset,
               style: TextButton.styleFrom(
