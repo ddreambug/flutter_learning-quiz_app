@@ -46,9 +46,14 @@ class ResultScreen extends StatelessWidget {
           children: [
             Text(
               'You answered $numberOfCorrectAnswer out of $numberOfQuestion question correctly!',
+              style: GoogleFonts.poppins(
+                  fontSize: 20,
+                  color: const Color.fromARGB(255, 241, 193, 255)),
+              textAlign: TextAlign.center,
             ),
             const SizedBox(height: 30),
             QuestionSummary(summaryData: getSummary),
+            const SizedBox(height: 30),
             TextButton.icon(
               onPressed: onReset,
               style: TextButton.styleFrom(
