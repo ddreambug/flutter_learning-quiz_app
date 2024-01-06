@@ -5,6 +5,7 @@ class QuestionSummary extends StatelessWidget {
   const QuestionSummary({super.key, required this.summaryData});
 
   final List<Map<String, Object>> summaryData;
+
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -13,7 +14,9 @@ class QuestionSummary extends StatelessWidget {
         child: Column(
             children: summaryData.map((data) {
           return Row(children: [
-            Text(((data['question_index'] as int) + 1).toString()),
+            CircleAvatar(
+                // gimana cara setting warna circleavatar sesuai jawaban yang benar
+                child: Text(((data['question_index'] as int) + 1).toString())),
             const SizedBox(width: 20),
             Expanded(
               child: Column(
