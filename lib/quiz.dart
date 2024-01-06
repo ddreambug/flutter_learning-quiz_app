@@ -49,7 +49,10 @@ class _QuizState extends State<Quiz> {
     }
 
     if (activeScreen == 'results-screen') {
-      screenWidget = ResultScreen(onReset: homeScreen);
+      screenWidget = ResultScreen(
+        onReset: homeScreen,
+        choosedAnswer: selectedAnswer,
+      );
     }
 
     return MaterialApp(
